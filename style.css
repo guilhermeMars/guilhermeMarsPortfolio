@@ -1,0 +1,310 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+:root{
+    --primary_color: rgb(134, 1, 216);
+    --nav_color: rgb(46, 0, 75);
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+/*
+nav{
+    width: 75px;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--nav_color);
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+}
+
+nav li{
+    width: 100%;
+}
+
+nav a{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    color: gray;
+    text-decoration: none;
+}
+
+nav p{
+    display: none;
+    margin-left: 20px;
+}
+
+#tudo{
+    margin-left: 75px;
+}
+*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2.7em;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.411);
+    margin-bottom: 20px;
+}
+
+#logo{
+    width: 2.5em;
+    vertical-align: middle;
+    margin: 10px;
+}
+
+#menu{
+    vertical-align: middle;
+    width: 3em;
+    align-self: center;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+main div{
+    margin-right: 4em;
+    margin-top: 10em;
+}
+
+#nome{
+    color: rgba(0, 0, 0, 0.65);
+    font-weight: 500;
+}
+
+main h1{
+    font-size: 3.5em;
+}
+
+main p{
+    margin-top: 10px;
+    width: 25em;
+    font-size: 25px;
+}
+
+main img{
+    width: 35%;
+    border-radius: 20px;
+}
+
+#boasVin{
+    background-image: linear-gradient(var(--primary_color), rgba(134, 1, 216, 0.733), rgba(134, 1, 216, 0));
+    margin-top: 35px;
+    text-align: center;
+}
+
+#boasVin h1{
+    padding-top: 10px;
+    color: white;
+    font-size: 4em;
+}
+
+#boasVin p{
+    color: white;
+    margin: 16px auto;
+    font-size: 25px;
+    max-width: 45em;
+}
+
+#aprendizado{
+    background-color: white;
+    margin: auto;
+    max-width: 60em;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    padding-bottom: 15px;
+}
+
+.sobre{
+    margin: 50px;
+    flex: 1;
+}
+
+.sobre h2{
+    font-size: 37px;
+}
+
+.sobre ul{
+    margin-top: 30px;
+    text-align: left;
+}
+
+.sobre li{
+    margin: 3px 0px;
+    font-size: 30px;
+}
+
+#linha{
+    background-color: rgba(0, 0, 0, 0.377);
+    margin: 15px 0px;
+    width: 2px;
+    border-radius: 5px;
+}
+
+#cursos{
+    margin: 30px auto;
+    text-align: center;
+}
+
+#cursos h1{
+    font-size: 65px;
+}
+
+#cursosImg{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1350px;
+    align-items: center;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+#cursosImg div{
+    position: relative;
+    flex: 1 1 300px;
+    width: 300px;
+    margin: 10px 20px;
+}
+
+#cursosImg img{
+    width: 400px;
+    transition: 0.25s;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.603);
+}
+
+#cursosImg img:hover{
+    filter: blur(2px);
+}
+
+#cursosImg p{
+    font-size: 18px;
+}
+
+.hoverBt{
+    font-size: 30px;
+    background-color: rgb(0, 110, 255);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    filter: opacity(0%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+}
+
+.bkYellow{
+    background-color: yellow;
+    color: black;
+}
+
+#cursosImg img:hover + .hoverBt, .hoverBt:hover {
+    filter: opacity(100%);
+}
+
+#projetos{
+    margin: 50px auto;
+    text-align: center;
+}
+
+#projetos h1{
+    font-size: 65px;
+}
+
+#projetosFlex{
+    display: flex;
+    margin-top: 10px;
+}
+
+#projetosImg{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    align-items: center;
+    margin: 30px auto;
+    justify-content: center;
+}
+
+#projetosImg img, #projetosImg iframe{
+    width: 400px;
+    height: 225px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.603);
+    margin: 0px 20px;
+}
+
+#projetosImg p{
+    font-size: 20px;
+}
+
+.projetosTraco{
+    background-color: var(--primary_color);
+    width: 150px;
+    height: 38em;
+}
+
+#finalizacao{
+    text-align: center;
+    margin: auto;
+}
+
+#finalizacao h1{
+    font-size: 70px;
+}
+
+#finalizacao span{
+    text-decoration: underline;
+}
+
+#social{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 700px;
+    align-items: center;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+#finalizacao img{
+    flex: 1 1 200px;
+    width: 300px;
+    margin: 10px;
+    transition: 0.25s;
+}
+
+#finalizacao img:hover{
+    width: 310px;
+}
+
+body::-webkit-scrollbar{
+    width: 11px;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: black;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: var(--primary_color);
+}

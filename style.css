@@ -180,24 +180,26 @@ main img{
 
 #cursosImg div{
     position: relative;
-    flex: 1 1 300px;
+    flex: 1 1 370px;
     width: 300px;
-    margin: 10px 20px;
+    margin: 15px 20px;
 }
 
 #cursosImg img{
     width: 400px;
+    height: 225px;
     transition: 0.25s;
     border-radius: 10px;
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.603);
 }
 
-#cursosImg img:hover{
+#cursosImg img:hover, #projetosImg img:hover{
     filter: blur(2px);
 }
 
 #cursosImg p{
     font-size: 18px;
+    font-weight: 500;
 }
 
 .hoverBt{
@@ -214,7 +216,7 @@ main img{
     transition: 0.5s;
 }
 
-.bkYellow{
+.btYellow{
     background-color: yellow;
     color: black;
 }
@@ -246,16 +248,40 @@ main img{
     justify-content: center;
 }
 
+#projetosImg div{
+    position: relative;
+    flex: 1 1 370px;
+    width: 300px;
+    margin: 15px 20px;
+    padding: 10px 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.4);
+}
+
 #projetosImg img, #projetosImg iframe{
-    width: 400px;
+    max-width: 400px;
     height: 225px;
     border-radius: 10px;
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.603);
-    margin: 0px 20px;
+    transition: 0.5s;
+    margin-bottom: 7px;
 }
 
-#projetosImg p{
+#projetosImg img:hover + .hoverBt, .hoverBt:hover {
+    filter: opacity(100%);
+}
+
+#projetosImg h3{
     font-size: 20px;
+    margin-bottom: 7px;
+}
+
+#projetosImg ul{
+    list-style: none;
+}
+
+#projetosImg li{
+    font-size: 18px;
 }
 
 .projetosTraco{
@@ -333,5 +359,16 @@ body::-webkit-scrollbar-thumb{
 
     #projetosImg img, #projetosImg iframe{
         max-width: 350px;
+    }
+}
+
+#cursosImg img{
+    max-width: 350px;
+}
+
+@media only screen and (max-width: 505px) {
+    #projetosImg img, #projetosImg iframe{
+        max-width: 250px;
+        height: 100%;
     }
 }

@@ -37,6 +37,13 @@
             <span>Guilherme Mars</span>
             <img src="media/menu.png" alt="Menu" id="menu">
         </header>
+        <div id="aviso">
+            <div>
+                <h1>Portfólio Antigo!</h1>
+                <p>Este portfólio não está mais sendo utilizado como meu oficial.<br><strong>Para acessar o oficial clique <a href="https://portfolio-nu-murex-60.vercel.app">neste link</a></strong></p>
+                <button onclick="handleClose()">Fechar</button>
+            </div>
+        </div>
         <main>
             <div>
                 <p id="nome">Guilherme Martins Spiandorin</p>
@@ -174,6 +181,11 @@
             </div>
         </section>
     </div>
+    <script>
+        function handleClose(){
+            document.getElementById("aviso").style.display = "none";
+        }
+    </script>
 </body>
 
 </html>
